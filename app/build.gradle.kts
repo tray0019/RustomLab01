@@ -13,6 +13,11 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        //Added because of lab task
+        buildFeatures {
+            viewBinding = true
+        }
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
