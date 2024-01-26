@@ -6,6 +6,9 @@ import androidx.lifecycle.Observer;
 
 
 import android.os.Bundle;
+import android.widget.Toast;
+
+import algonquin.cst2335.rustomlab01.R;
 import algonquin.cst2335.rustomlab01.databinding.ActivityMainBinding;
 import algonquin.cst2335.rustomlab01.ui.data.MainViewModel;
 
@@ -54,11 +57,51 @@ public class MainActivity extends AppCompatActivity {
         model.editString.observe(this, new Observer<String>(){
             @Override
             public void onChanged(String s) {
-                variableBinding.textview.setText("Your edit text has: " + model.editString);
-
+                String formattedText = getString(R.string.edit_text_message, model.editString.getValue());
+                variableBinding.textview.setText(formattedText);
             }
         });
 
+        variableBinding.checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            model.isSelected.postValue(isChecked);
+        });
+
+        variableBinding.switch1.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            model.isSelected.postValue(isChecked);
+        });
+
+        variableBinding.radioButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            model.isSelected.postValue(isChecked);
+        });
+
+        //Image for my activity main
+        //variableBinding.imageV.setOnClickListener(v -> {
+
+        //});
+
+        //Image for my image button
+        variableBinding.myImageButton.setOnClickListener(v -> {
+
+
+            int width = v.getWidth();
+            int height = v.getHeight();
+            String toastMessage = getString(R.string.toast_message_size, width, height);
+            Toast.makeText(MainActivity.this, toastMessage, Toast.LENGTH_SHORT).show();
+        });
+
+
+
+        model.isSelected.observe(this, selected -> {
+
+
+            variableBinding.radioButton.setChecked(selected);
+            variableBinding.checkBox.setChecked(selected);
+            variableBinding.switch1.setChecked(selected);
+
+            String toastMessage = getString(R.string.value_now_message, selected.toString());
+            Toast.makeText(MainActivity.this, toastMessage, Toast.LENGTH_SHORT).show();
+
+        });
 
 
 

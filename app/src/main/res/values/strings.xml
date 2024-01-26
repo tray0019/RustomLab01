@@ -4,5 +4,11 @@
     <string name="button_message">I\'m a button</string>
     <string name="editmessage" translatable="false">I\'m an EditTEXT</string>
     <string name="hinttext" translatable="false">Write something here</string>
+    <string name="coffeeQuestion" translatable="false">Do you drink coffee?</string>
+    <string name="edit_text_message" translatable="false">"Your edit text has: %1$s"</string>
+    <string name="toast_message_size" translatable="false">The width = %1$d and height = %2$d</string>
+    <string name="value_now_message" translatable="false">The value is now: %1$s</string>
+
+
 
 </resources>

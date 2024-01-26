@@ -10,20 +10,17 @@
 
 
     <TextView
-
         android:id="@+id/textview"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_message"
+
 
         />
 
 
     <Button
-
         android:id="@+id/myButton"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -36,6 +33,46 @@
         android:layout_height="wrap_content"
         android:text="@string/editmessage"
         android:hint="@string/hinttext"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coffeeQuestion"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coffeeQuestion"
+        />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coffeeQuestion"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:src="@drawable/algonquin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        />
+
+    <ImageButton
+
+        android:id="@+id/myImageButton"
+        android:src="@drawable/algonquin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
 
 
