@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">RustomLab01</string>
-    <string name="hello_message">Hello World!</string>
-    <string name="button_message">I\'m a button</string>
+    <string name="takePictureButton" translatable="false">Change Picture</string>
+    <string name="textView" translatable="false">TextView</string>
+    <string name="callButton" translatable="false">Call number</string>
+    <string name="welcomeTextView" translatable="false">Welcome back!</string>\
+    <string name="emailLabel" translatable="false">Enter your email address:</string>
+    <string name="email" translatable="false">Type email here</string>
+    <string name="passwordLabel" translatable="false">Type your password:</string>
+    <string name="password" translatable="false">Type password here</string>
+    <string name="login_button" translatable="false">LOGIN</string>
+
 
 </resources>
