@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">RustomLab01</string>
-    <string name="hello_message">Hello World!</string>
-    <string name="button_message">I\'m a button</string>
+    <string name="typePass">Type your password: </string>
+    <string name="buton">Login</string>
+    <string name="hasUpperCase">Your password does not have an upper case letter.</string>
+    <string name="hasLowerCase">Your password does not have a lower case letter.</string>
+    <string name="hasNumber">Your password does not have a number.</string>
+    <string name="hasSpecial">Your password does not have a special symbol.</string>
+    <string name="met">Your password meets all the requirements.</string>
+    <string name="notMet">You shall not pass!</string>
 
 </resources>
