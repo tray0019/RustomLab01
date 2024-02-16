@@ -8,4 +8,5 @@
     <string name="hasSpecial">Your password does not have a special symbol.</string>
     <string name="met">Your password meets all the requirements.</string>
     <string name="notMet">You shall not pass!</string>
+
 </resources>

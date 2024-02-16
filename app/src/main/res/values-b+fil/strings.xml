@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RustomLab01</string>
+    <string name="hello_message">Hello sa buong Mundo!</string>
+    <string name="button_message">Button ako</string>
+
+</resources>
