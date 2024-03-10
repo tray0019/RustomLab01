@@ -1,15 +1,15 @@
 package algonquin.cst2335.rustomlab01;
 
 public class ChatMessage {
-
+    boolean isSend;
         private String message;
         private String timeSent;
-        private boolean isSentByUser;
 
-        public ChatMessage(String message, String timeSent, boolean isSentByUser) {
+
+        public ChatMessage(String message, String timeSent, boolean isSend) {
             this.message = message;
             this.timeSent = timeSent;
-            this.isSentByUser = isSentByUser;
+            this.isSend = isSend;
         }
 
         // Getters and setters
@@ -29,13 +29,11 @@ public class ChatMessage {
             this.timeSent = timeSent;
         }
 
-        public boolean isSentByUser() {
-            return isSentByUser;
-        }
 
-        public void setSentByUser(boolean sentByUser) {
-            isSentByUser = sentByUser;
-        }
+    public boolean isSend() {
+
+        return isSend;
     }
+}
 
 
