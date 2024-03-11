@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
             String password = et.getText().toString();
             boolean isComplex = checkPasswordComplexity(password);
             if (isComplex) {
-                tv.setText(R.string.met); // "password meets the requirements"
+                //tv.setText(R.string.met); // "password meets the requirements"
             } else {
-                tv.setText(R.string.notMet); // Shall noit pass
+                //tv.setText(R.string.notMet); // Shall noit pass
             }
         });
 
@@ -72,23 +72,23 @@ public class MainActivity extends AppCompatActivity {
         if (!foundUpperCase || !foundLowerCase || !foundNumber || !foundSpecial) {
 
             if (!foundUpperCase) {
-                showToast(R.string.hasUpperCase);
+                //showToast(R.string.hasUpperCase);
                 return false;
             }
             if (!foundLowerCase) {
-                showToast(R.string.hasLowerCase);
+                //showToast(R.string.hasLowerCase);
                 return false;
             }
             if (!foundNumber) {
-                showToast(R.string.hasNumber);
+                //showToast(R.string.hasNumber);
                 return false;
             }
             if (!foundSpecial) {
-                showToast(R.string.hasSpecial);
+               //showToast(R.string.hasSpecial);
                 return false;
             }
 
-            showToast(R.string.met); // If all checks pass
+            //showToast(R.string.met); // If all checks pass
 
 
         }
