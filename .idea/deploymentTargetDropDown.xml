@@ -10,12 +10,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Tom\.android\avd\week2.avd" />
+                  <value value="C:\Users\Tom\.android\avd\Master.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-03-05T22:50:28.050980700Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-03-11T22:50:38.451692100Z" />
         </State>
       </entry>
       <entry key="MainActivityTest">

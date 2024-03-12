@@ -81,14 +81,17 @@ public class ChatRoom extends AppCompatActivity {
 
         binding.recycleView.setAdapter(myAdapter);
 
+        //Simple format
+        SimpleDateFormat sdf = new SimpleDateFormat("EEEE, dd-MMM-yyyy hh:mm:ss a", Locale.getDefault());
+        String currentDateandTime = sdf.format(new Date());
+
         binding.sendButton.setOnClickListener(click -> {
             String messageText = binding.textinput.getText().toString();
-            SimpleDateFormat sdf = new SimpleDateFormat("EEEE, dd-MMM-yyyy hh:mm:ss a", Locale.getDefault());
-            String currentDateandTime = sdf.format(new Date());
             ChatMessage newMessage = new ChatMessage(messageText, currentDateandTime, true);
 
             ArrayList<ChatMessage> currentMessages = chatModel.messages.getValue();
             if (currentMessages == null) currentMessages = new ArrayList<>();
+
             currentMessages.add(newMessage);
             chatModel.messages.setValue(currentMessages);
             binding.textinput.setText("");
@@ -98,10 +101,7 @@ public class ChatRoom extends AppCompatActivity {
             ArrayList<ChatMessage> currentMessages = chatModel.messages.getValue();
             if (currentMessages == null) currentMessages = new ArrayList<>();
 
-
             String messageText = binding.textinput.getText().toString();
-            SimpleDateFormat sdf = new SimpleDateFormat("EEEE, dd-MMM-yyyy hh-mm-ss a", Locale.getDefault());
-            String currentDateandTime = sdf.format(new Date());
             ChatMessage newMessage = new ChatMessage(messageText, currentDateandTime, false); // false for received messages
 
             currentMessages.add(newMessage);

@@ -1,9 +1,36 @@
 package algonquin.cst2335.rustomlab01;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class ChatMessage {
-    boolean isSend;
+
+    @ColumnInfo(name="message")
+         boolean isSend;
+
+    @ColumnInfo(name="TimeSent")
         private String message;
+
+    @ColumnInfo(name="SendOrReceive")
         private String timeSent;
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name="id")
+    public void setSend(boolean send) {
+        isSend = send;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int id;
 
 
         public ChatMessage(String message, String timeSent, boolean isSend) {
