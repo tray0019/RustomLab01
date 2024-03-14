@@ -7,20 +7,30 @@ import androidx.room.PrimaryKey;
 @Entity
 public class ChatMessage {
 
-    @ColumnInfo(name="message")
-         boolean isSend;
-
-    @ColumnInfo(name="TimeSent")
-        private String message;
-
     @ColumnInfo(name="SendOrReceive")
-        private String timeSent;
+    boolean isSend;
+
+    @ColumnInfo(name="message")
+    private String message;
+
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name="id")
+    public int id;
+
+    @ColumnInfo(name="TimeSent")
+    private String timeSent;
+
+    public ChatMessage(String message, String timeSent, boolean isSend) {
+        this.message = message;
+        this.timeSent = timeSent;
+        this.isSend = isSend;
+    }
+
     public void setSend(boolean send) {
         isSend = send;
     }
+
 
     public int getId() {
         return id;
@@ -30,31 +40,25 @@ public class ChatMessage {
         this.id = id;
     }
 
-    public int id;
 
 
-        public ChatMessage(String message, String timeSent, boolean isSend) {
-            this.message = message;
-            this.timeSent = timeSent;
-            this.isSend = isSend;
-        }
 
-        // Getters and setters
-        public String getMessage() {
-            return message;
-        }
+    // Getters and setters
+    public String getMessage() {
+        return message;
+    }
 
-        public void setMessage(String message) {
-            this.message = message;
-        }
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
-        public String getTimeSent() {
-            return timeSent;
-        }
+    public String getTimeSent() {
+        return timeSent;
+    }
 
-        public void setTimeSent(String timeSent) {
-            this.timeSent = timeSent;
-        }
+    public void setTimeSent(String timeSent) {
+        this.timeSent = timeSent;
+    }
 
 
     public boolean isSend() {

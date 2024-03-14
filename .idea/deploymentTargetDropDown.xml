@@ -10,28 +10,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Tom\.android\avd\Master.avd" />
+                  <value value="C:\Users\Tom\.android\avd\Pixel_4_API_29.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-03-11T22:50:38.451692100Z" />
-        </State>
-      </entry>
-      <entry key="MainActivityTest">
-        <State>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Tom\.android\avd\Week_5.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-02-15T01:36:41.112647700Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-03-14T02:01:24.974490900Z" />
         </State>
       </entry>
       <entry key="app">
